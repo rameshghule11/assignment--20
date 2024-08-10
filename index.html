@@ -4,9 +4,17 @@
     <title>calculator</title>
 </head>
 <body>
-    <div>
-        <fieldset>
+    <div class="container">
+        <fieldset id="container">
             <form name="calculator">
+
+                <input id="display" type="text" name="display" readonly>
+
+                <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+                <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+                <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+                <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+                <br>
 
             </form>
         </fieldset>
